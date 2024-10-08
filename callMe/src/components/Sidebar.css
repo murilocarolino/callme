@@ -1,0 +1,70 @@
+.menu {
+  height: 85vh;
+  width: 8%;
+  background-color: #1F55C6;
+  border-radius: 70px 70px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notas {
+  width: 100px;
+  height: 100px;
+  background-color: #7FB3FF;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.chat {
+  width: 100px;
+  height: 100px;
+  background-color: #7FB3FF;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.autoajuda {
+  width: 100px;
+  height: 100px;
+  background-color: #7FB3FF;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.estatistica {
+  width: 100px;
+  height: 100px;
+  background-color: #7FB3FF;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.doacao {
+  width: 100px;
+  height: 100px;
+  background-color: #7FB3FF;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.icon {
+  height: 50%;
+  display: grid;
+  justify-items: center;
+}

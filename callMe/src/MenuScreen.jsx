@@ -4,14 +4,19 @@ const MenuScreen = () => {
   return (
 
     <div className="menu-container">
-      
+
       <div className="nota">
         <div className="nota3"></div>
+        <div className="nota2"></div>
+        <div className="nota1"></div>
+        <div className="pin"></div>
       </div>
 
-      <h2>Bem-vindo ao Menu</h2>
-      <button>Postar Nota</button>
-      <button>Responder Nota</button>
+      <div className="botao-container"> 
+        <button>Postar Nota</button>
+        <button>Responder Nota</button>
+      </div>
+      
     </div>
   );
 };

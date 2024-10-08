@@ -34,18 +34,17 @@ input {
 }
 
 button {
-  margin: 10px 0;
-  padding: 10px;
-  width: 100%;
-  background-color: #007BFF;
+  padding: 50px 170px;
+  background-color: #213787;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 100px;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #2754B2;
 }
 
 .LoginScreen {
@@ -111,9 +110,76 @@ button:hover {
   border-radius: 0 0 20px 20px;
 }
 
+/*************************************** Página de Notas ************************************************************/
+
+
+
 .nota3 {
-  height: 50px;
-  width: 50px;
-  background-color: red;
-  transform: rotate(137deg);
+  height: 40vh;
+  width: 20vw;
+  background-color: #BCDDFF;
+  transform: rotate(-8deg);
+  border-radius: 25px;
+  display: flex;
+  position: absolute;
+  border-width: 0.3vw;
+  border-style: solid;
+  border-color: #020075;
+  margin-right: 5vw;
+}
+
+.nota2 {
+  height: 40vh;
+  width: 20vw;
+  background-color: #FFFFD2;
+  transform: rotate(-12deg);
+  border-radius: 25px;
+  display: flex;
+  position: absolute;
+  border-width: 0.3vw;
+  border-style: solid;
+  border-color: #020075;
+  margin-right: -4vw;
+  margin-top: 10vh;
+}
+
+.nota1 {
+  height: 40vh;
+  width: 20vw;
+  background-color: #FEFEFF;
+  border-radius: 25px;
+  display: flex;
+  position: absolute;
+  border-width: 0.3vw;
+  border-style: solid;
+  border-color: #020075;
+  margin-bottom: 6vh;
+}
+
+.nota {
+  display: grid;
+  place-items: center;
+  margin-top: 13%;
+}
+
+.pin {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 100%;
+  border-width: 0.3vw;
+  border-style: solid;
+  border-color: #020075;
+  background-color: #FFFFD2;
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.botao-container {
+  display: flex; 
+  justify-content: center;
+  margin-top: 350px;
+  gap: 50px;
 }
