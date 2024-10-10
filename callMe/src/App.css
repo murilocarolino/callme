@@ -127,7 +127,7 @@ p {
   border-width: 0.3vw;
   border-style: solid;
   border-color: #020075;
-  top: 550px;
+  top: 605px;
   left: 165%;
 }
 
@@ -143,8 +143,8 @@ p {
   border-style: solid;
   border-color: #020075;
   margin-right: -4vw;
-  top: 90px;
-  left: 173%;
+  top: 100px;
+  left: 174%;
 }
 
 .nota1 {
@@ -157,7 +157,7 @@ p {
   border-width: 0.3vw;
   border-style: solid;
   border-color: #020075;
-  bottom: 460px;
+  bottom: 550px;
   left: 175%;
 }
 
@@ -223,7 +223,7 @@ p {
 }
 
 .responderInput {
-  width: 470px;
+  width: 540px;
   height: 11vh;
   padding: 10px 40px 10px 25px;
   border: 4px solid #1F55C6;
@@ -233,30 +233,30 @@ p {
   font-size: 22px;
   outline: none;
   display: flex;
-  margin-left: -275%;
-  margin-bottom: 21%;
+  margin-left: -200%;
+  margin-bottom: 18%;
 }
 
 .icon-enviar {
   position: absolute;
-  right: 680px;
-  bottom: 140px;
+  right: 580px;
+  bottom: 150px;
   font-size: 40px;
   cursor: pointer;
   color: #213787;
 }
 
 .pop-square {
-  width: 470px;
-  height: 11vh;
+  width: 540px;
+  height: 10.5vh;
   background-color: #7FB3FF;
   border: 4px solid #1F55C6;
   color: #1F55C6;
   border-radius: 15px;
   margin-top: 20px;
   position: absolute;
-  top: 20px;
-  left: 50%;
+  top: 81%;
+  left: 55%;
   opacity: 0;
   transform: translateX(-50%);
   transform: scale(0.8);
@@ -271,4 +271,20 @@ p {
 .fade-out {
   opacity: 0;
   transform: scale(0.8);
+}
+
+.voltar {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  margin-bottom: 30%;
+  margin-left: 2%;
+}
+
+.avancar {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  margin-bottom: 30%;
+  margin-left: 80%;
 }
