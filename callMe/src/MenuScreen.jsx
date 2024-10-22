@@ -4,8 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
+import { getNotas } from "../../funcoes";
 
-const MenuScreen = ({navigateToChat }) => {
+const MenuScreen =  ({navigateToChat }) => {
   const [showPopSquare, setShowPopSquare] = useState(false);
   const [showInput, setShowInput] = useState(false);
 
@@ -18,6 +19,18 @@ const MenuScreen = ({navigateToChat }) => {
     setShowInput(false);
   };
 
+  const listarNotas = async () => {
+    try {
+      const notasResponse = await getNotas({
+        excluidas: false,
+        quantity: 10,
+      });
+      console.log(notasResponse);
+      return notasResponse
+    } catch (error) {
+      console.error(error);
+    }
+  };
   useEffect(() => {
     let timer;
     if (showPopSquare) {

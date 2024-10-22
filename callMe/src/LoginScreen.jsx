@@ -1,13 +1,38 @@
 import React, { useState } from "react";
 import './App.css';
+import { validateLogin } from "../../funcoes";
 
 const LoginScreen = ({ navigateToRegister, handleLogin }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    handleLogin();
+  const handleSubmit = async (e) => {
+    const teste = true
+
+    let response = null
+    const dados = {
+      login: email,
+      senha: password,
+    }
+    let validateStatus = true
+
+    if (validateStatus && (email == null || email == undefined || email == ''||password== null || password == undefined || password == '')) {
+      validateStatus = false
+      alert("Campos vazios");
+    }
+    if(validateStatus){
+      response = await validateLogin(dados)
+      const code = response.data.code
+      if(code == 0){
+        alert("Essa conta não existe")
+      }
+      if(code == 2){
+        alert("Senha incorreta")
+      }
+    }
+    if(response.success || teste){
+      handleLogin();
+    }
   };
 
   return (
