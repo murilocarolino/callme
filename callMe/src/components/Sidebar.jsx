@@ -1,34 +1,32 @@
 import React from 'react';
 import './Sidebar.css';
 
-const Sidebar = () => {
-    return (
+const Sidebar = ({ navigateToMenu, navigateToChat }) => {
+  return (
+    <div className="menu">
+      <div className="icones">
+        <button className="notas" onClick={navigateToMenu}> 
+          <img src="./img/notas.png" className='icon' />
+        </button>
 
-        <div className="menu">
+        <button className='chat' onClick={navigateToChat}>
+          <img src="./img/chat.png" className='icon' />
+        </button>
 
-          <div className="notas">
-            <img src="./img/notas.png" alt="" className="icon" />
-          </div>
+        <button className='autoajuda'>
+          <img src="./img/autoajuda.png" className='icon' />
+        </button>
 
-          <div className="chat">
-            <img src="./img/chat.png" alt="" className="icon" />
-          </div>
+        <button className='estatistica'>
+          <img src="./img/estatistica.png" className='icon' />
+        </button>
 
-          <div className="autoajuda">
-            <img src="./img/autoajuda.png" alt="" className="icon" />
-          </div>
-
-          <div className="estatistica">
-            <img src="./img/estatistica.png" alt="" className="icon"  />
-          </div>
-
-          <div className="doacao">
-            <img src="./img/doacao.png" alt="" className="icon"  />
-          </div>
-
+        <button className='doacao'>
+          <img src="./img/doacao.png" className='icon' />
+        </button>
       </div>
-      
-    );
-};
+    </div>
+  );
+}
 
 export default Sidebar;

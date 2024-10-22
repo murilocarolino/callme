@@ -9,21 +9,23 @@
 }
 
 .notas {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   background-color: #7FB3FF;
   border-radius: 100%;
+  border: #7FB3FF;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 130px;
   align-items: center;
 }
 
 .chat {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   background-color: #7FB3FF;
   border-radius: 100%;
+  border: #7FB3FF;
   display: flex;
   justify-content: center;
   margin-top: 70px;
@@ -31,10 +33,11 @@
 }
 
 .autoajuda {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   background-color: #7FB3FF;
   border-radius: 100%;
+  border: #7FB3FF;
   display: flex;
   justify-content: center;
   margin-top: 70px;
@@ -42,10 +45,11 @@
 }
 
 .estatistica {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   background-color: #7FB3FF;
   border-radius: 100%;
+  border: #7FB3FF;
   display: flex;
   justify-content: center;
   margin-top: 70px;
@@ -53,10 +57,11 @@
 }
 
 .doacao {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   background-color: #7FB3FF;
   border-radius: 100%;
+  border: #7FB3FF;
   display: flex;
   justify-content: center;
   margin-top: 70px;
