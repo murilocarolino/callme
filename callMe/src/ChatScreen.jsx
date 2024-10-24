@@ -7,9 +7,15 @@ const ChatScreen = () => {
 
     <div className="chat-container">
 
-        <Sidebar />
+      <Sidebar />
 
-      <div className="sidebar">
+      <div className="sidebar">  
+            
+      <div className="choiceRow">
+        <h2> Conversas </h2>
+        <h2> Prioridades </h2>
+      </div>
+
         <div className="sidebar-item">
           <img src="/img/Icon.png" alt="Luana Santos" className="profile-pic" />
           <span className="username">Luana Santos</span>

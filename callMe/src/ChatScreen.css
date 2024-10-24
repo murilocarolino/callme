@@ -22,6 +22,12 @@
     margin-left: 50px;
 }
 
+.choiceRow {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 .username {
     font-weight: bold;
     margin-bottom: 4%;
