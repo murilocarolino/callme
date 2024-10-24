@@ -1,11 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .menu {
   height: 85vh;
-  width: 8%;
+  width: 7%;
+  margin-top: 7.2%;
+  margin-right: 93%;
   background-color: #1F55C6;
-  border-radius: 70px 70px 0px 0px;
+  border-radius: 100px 100px 0px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
+  z-index: 10;
 }
 
 .notas {
@@ -16,8 +26,12 @@
   border: #7FB3FF;
   display: flex;
   justify-content: center;
-  margin-top: 130px;
+  margin-top: 100%;
   align-items: center;
+}
+
+.iconNota {
+  height: 40%;
 }
 
 .chat {
@@ -28,8 +42,12 @@
   border: #7FB3FF;
   display: flex;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 70%;
   align-items: center;
+}
+
+.iconChat {
+  height: 40%;
 }
 
 .autoajuda {
@@ -40,8 +58,12 @@
   border: #7FB3FF;
   display: flex;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 70%;
   align-items: center;
+}
+
+.iconAutoajuda {
+  height: 40%;
 }
 
 .estatistica {
@@ -52,8 +74,12 @@
   border: #7FB3FF;
   display: flex;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 70%;
   align-items: center;
+}
+
+.iconEstatistica {
+  height: 40%;
 }
 
 .doacao {
@@ -64,12 +90,10 @@
   border: #7FB3FF;
   display: flex;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 70%;
   align-items: center;
 }
 
-.icon {
-  height: 50%;
-  display: grid;
-  justify-items: center;
+.iconDoacao {
+  height: 40%;
 }

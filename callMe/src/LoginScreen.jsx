@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import './App.css';
-import { validateLogin } from "../../funcoes";
+import './LoginScreen.css';
+import { validateLogin } from "../funcoes";
 
 const LoginScreen = ({ navigateToRegister, handleLogin }) => {
   const [email, setEmail] = useState("");

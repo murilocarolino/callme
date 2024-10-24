@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
-import { getNotas } from "../../funcoes";
+import { getNotas } from "../funcoes";
+import './MenuScreen.css';
 
 const MenuScreen =  ({navigateToChat }) => {
   const [showPopSquare, setShowPopSquare] = useState(false);
@@ -75,13 +76,15 @@ const MenuScreen =  ({navigateToChat }) => {
         </Carousel.Item>
       </Carousel>
 
-      <div className="botao-container">
-        <button className="postar"><p>Postar Nota</p></button>
-        <button className="responder" onClick={handleResponderClick}><p>Responder Nota</p></button>
-      </div>
+      <div className="botoes">
+        <div className="botao-container">
+          <button className="postar"><p>Postar Nota</p></button>
+          <button className="responder" onClick={handleResponderClick}><p>Responder Nota</p></button>
+        </div>
 
-      <div className={`pop-square ${showPopSquare ? 'fade-in' : 'fade-out'}`}>
-        <p className="popUp">Ver sua resposta!</p>
+        <div className={`pop-square ${showPopSquare ? 'fade-in' : 'fade-out'}`}>
+          <p className="popUp">Ver sua resposta!</p>
+        </div>
       </div>
 
       {showInput && (
