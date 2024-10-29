@@ -6,9 +6,9 @@
   box-sizing: border-box;
 }
 
-.left-side, .right-side, .left-menu, .note-section {
+/* .left-side, .right-side, .left-menu, .note-section {
   padding: 20px;
-}
+} */
 
 .label{
   width: 25%;

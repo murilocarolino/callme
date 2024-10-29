@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './App.css';
 import LoginScreen from "./LoginScreen.jsx";
-import RegisterScreen from "./RegisterScreen.jsx";
+import RegisterScreen from "./Cadastro.jsx";
 import MenuScreen from "./MenuScreen.jsx";
 import ChatScreen from "./ChatScreen.jsx";
 import AjudaScreen from "./AjudaScreen.jsx";

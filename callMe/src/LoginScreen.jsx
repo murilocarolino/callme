@@ -57,13 +57,15 @@ const LoginScreen = ({ navigateToRegister, handleLogin }) => {
 
           <div className="groupInput">
             <div className="input-wrapper">
-              <div className="label">E-mail</div>
+              <p> </p>
               <input type="email" placeholder="Digite seu e-mail" value={email} onChange={(e) => setEmail(e.target.value)} />
             </div>
 
             <div className="input-wrapper">
-              <div className="label">Senha</div>
-              <input type="password" placeholder="Digite sua senha" value={password} onChange={(e) => setPassword(e.target.value)} />
+              <div>
+                <p> </p>
+                  <input type="password" placeholder="Digite sua senha" value={password} onChange={(e) => setPassword(e.target.value)} />
+              </div>
             </div>
           </div>
 
