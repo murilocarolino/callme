@@ -47,7 +47,7 @@ const LoginScreen = ({ navigateToRegister, handleLogin }) => {
              Faça seu login.
              </h1>
 
-          <img src="./img/macallme.png" className="logo" alt="logo" />
+          <img src="./img/macallme.png" className="" alt="logo" />
 
         </div>
 
@@ -56,17 +56,15 @@ const LoginScreen = ({ navigateToRegister, handleLogin }) => {
           <img src="./img/logoCallme.png" className="logoCallme" alt="logo" />
 
           <div className="groupInput">
-            <div className="input-wrapper">
+            <div className="emailLogin">
               <p> </p>
-              <input type="email" placeholder="Digite seu e-mail" value={email} onChange={(e) => setEmail(e.target.value)} />
+              <input className="input-wrapper"  type="email" placeholder="Digite seu e-mail" value={email} onChange={(e) => setEmail(e.target.value)} />
             </div>
 
-            <div className="input-wrapper">
-              <div>
+              <div className="senhaLogin">
                 <p> </p>
-                  <input type="password" placeholder="Digite sua senha" value={password} onChange={(e) => setPassword(e.target.value)} />
+                  <input className="input-wrapper" type="password" placeholder="Digite sua senha" value={password} onChange={(e) => setPassword(e.target.value)} />
               </div>
-            </div>
           </div>
 
           <a href="#" className="forgot-password">Esqueci minha senha</a>
