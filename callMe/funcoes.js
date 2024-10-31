@@ -36,6 +36,19 @@ export async function getNotas(params){
 //   return data;
 // }
 
+export async function postFilme(filme) {
+  const url=`${link}/callme/filme`
+  const options={
+      method:'POST',
+      headers:{
+          'Content-type':'application/json'
+      },
+      body:JSON.stringify(filme)
+  }
+  const response=await fetch(url,options)
+  return response.ok
+}
+
 
 export async function postCliente(dados) {
     const url = `${link}/cliente`;
@@ -78,4 +91,3 @@ export async function validateLogin(dados) {
       return { success: false, data: null }; 
     }
 }
-

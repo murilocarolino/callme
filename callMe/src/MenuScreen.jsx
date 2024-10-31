@@ -47,9 +47,12 @@ const MenuScreen =  ({navigateToChat }) => {
   return (
     <div className="menu-container">
       <Sidebar navigateToChat={ navigateToChat} />
+      <NotasComponent />
 
-      <Carousel>
-        <Carousel.Item>
+      {/* <Carousel>
+
+
+        {/* <Carousel.Item>
           <div className="notas-container">
             <div className="nota3 nota"></div>
             <div className="nota2 nota"></div>
@@ -76,8 +79,8 @@ const MenuScreen =  ({navigateToChat }) => {
             <div className="nota1 nota"></div>
             <div className="pin"></div>
           </div>
-        </Carousel.Item>
-      </Carousel>
+        </Carousel.Item> 
+      </Carousel> */}
 
       <div className="botoes">
         <div className="botao-container">
