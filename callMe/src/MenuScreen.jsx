@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import { getNotas } from "../funcoes";
 import './MenuScreen.css';
+import NotasComponent from "./components/NotasComponent";
 
 const MenuScreen =  ({navigateToChat }) => {
   const [showPopSquare, setShowPopSquare] = useState(false);
@@ -52,7 +53,9 @@ const MenuScreen =  ({navigateToChat }) => {
           <div className="notas-container">
             <div className="nota3 nota"></div>
             <div className="nota2 nota"></div>
-            <div className="nota1 nota"></div>
+            <div className="nota1 nota">
+              <NotasComponent />
+            </div>
             <div className="pin"></div>
           </div>
         </Carousel.Item>

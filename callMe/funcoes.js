@@ -29,6 +29,13 @@ export async function getNotas(params){
     return data.dados
 }
 
+// export async function getNotas(excluidas, quantity) {
+//   const url = `${link}/notas?excluidas=${excluidas}&quantity=${quantity}`;
+//   const response = await fetch(url);
+//   const data = await response.json();
+//   return data;
+// }
+
 
 export async function postCliente(dados) {
     const url = `${link}/cliente`;

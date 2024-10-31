@@ -1,0 +1,7 @@
+.nenhumaNota {
+    background-color: red;
+    position: absolute;
+    z-index: 10;
+    width: 30vw;
+    margin-left: 60%;
+}
