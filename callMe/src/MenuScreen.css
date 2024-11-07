@@ -91,6 +91,13 @@ body {
     width: 100%;
 }
 
+.botao-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
 .postar, .responder {
     padding: 30px 10%; 
     background-color: #213787;
@@ -98,10 +105,9 @@ body {
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    margin-top: 100px;
     height: 10vh;
-    margin-left: 25%;
-    margin-right: -10%;
+    width: 20%;
+    gap: 10%;
 }
 
 .menu-container {
@@ -127,7 +133,7 @@ body {
 
 .responderInput {
     width: 70%; 
-    height: 11vh;
+    height: 22vh;
     padding: 10px 40px 10px 25px;
     border: 4px solid #1F55C6;
     background-color: #7FB3FF;
@@ -136,14 +142,14 @@ body {
     font-size: 22px;
     outline: none;
     display: flex;
-    margin-top: 100%;
-    margin-left: -40%;
+    margin-top: 78%;
+    margin-left: -87%;
 }
 
 .icon-enviar {
     position: absolute;
-    right: 550px;
-    bottom: 80px;
+    right: 900px;
+    bottom: 50px;
     font-size: 40px;
     cursor: pointer;
     color: #213787;
@@ -156,7 +162,8 @@ body {
     border: 4px solid #1F55C6;
     color: #1F55C6;
     border-radius: 15px;
-    margin-top: 20px;
+    margin-top: 21.4%;
+    margin-left: 5%;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -176,7 +183,15 @@ body {
 
 .botao-container {
     display: flex;
-    gap: 20px;
+    gap: 200px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 500;
+    width: 100%;
 }
 
 .botoes {

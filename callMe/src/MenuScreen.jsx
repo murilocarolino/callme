@@ -6,20 +6,20 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import { getNotas } from "../funcoes";
 import './MenuScreen.css';
-import NotasComponent from "./components/NotasComponent";
+import NotasComponent from "./components/NotasComponent"
 
 const MenuScreen =  ({navigateToChat }) => {
-  const [showPopSquare, setShowPopSquare] = useState(false);
-  const [showInput, setShowInput] = useState(false);
+  const [showPopSquare, setShowPopSquare] = useState(false)
+  const [showInput, setShowInput] = useState(false)
 
   const handleResponderClick = () => {
-    setShowInput(true);
+    setShowInput(true)
   };
 
   const handleIconClick = () => {
     setShowPopSquare(true);
     setShowInput(false);
-  };
+  }
 
   const listarNotas = async () => {
     try {
@@ -84,7 +84,7 @@ const MenuScreen =  ({navigateToChat }) => {
 
       <div className="botoes">
         <div className="botao-container">
-          <button className="postar"><p>Postar Nota</p></button>
+          <button className="postar"><p>Escrever Nota</p></button>
           <button className="responder" onClick={handleResponderClick}><p>Responder Nota</p></button>
         </div>
 
@@ -96,7 +96,11 @@ const MenuScreen =  ({navigateToChat }) => {
       {showInput && (
         <div className="input-responder">
           <input className="responderInput" type="text" placeholder="Acrescente seu tópico..." />
-          <FontAwesomeIcon icon={faPaperPlane} className="icon-enviar" onClick={handleIconClick} />
+          <FontAwesomeIcon
+            icon={faPaperPlane}
+            className="icon-enviar"
+            onClick={handleIconClick}
+          />
         </div>
       )}
     </div>

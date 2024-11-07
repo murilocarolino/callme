@@ -22,16 +22,12 @@ const NotasComponent = ({ onNotasLoad }) => {
         };
         loadNotas();
     }, [onNotasLoad]);
-        
-    
-
-   
 
     if (loading) return <p>Carregando...</p>;
 
     return (
         <>
-        <Carousel>
+        <Carousel interval={null}>
         {notas.map((nota, index) => (
             
             <Carousel.Item>
@@ -39,15 +35,11 @@ const NotasComponent = ({ onNotasLoad }) => {
                     <div className="nota3 nota"></div>
                     <div className="nota2 nota"></div>
                     <div className="nota1 nota">
-                            <h1>Notas</h1>
                             {notas.length > 0 ? (
-                                <ul>
-                                   
-                                        <li key={nota.id}>
-                                            <p>{nota.conteudo}</p>
-                                            <p>Usuário: {nota.usuario.nome}</p>
-                                        </li>
-                                 
+                                <ul>                                 
+                                    <li key={nota.id}>
+                                        <p><span className="usuario-nota">{nota.conteudo}</span></p>
+                                    </li>                   
                                 </ul>
                             ) : (
                                 <div className="nenhumaNota">
